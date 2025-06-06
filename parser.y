@@ -38,7 +38,7 @@ int line_num = 1;
 
 %%
 
-program:
+program: /* empty */
   | program line
 ;
 
@@ -48,7 +48,7 @@ line: statement '\n'
     }
 ;
 
-statement:
+statement: /* empty */
   | set_var
   | print_expr
 ;
